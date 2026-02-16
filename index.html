@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeenaDev</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="background-layer"></div>
+
+<header class="topnav">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#patreon">Patreon</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+     <video autoplay loop muted playsinline class="hero-video">
+        <source src="assets/veenadev-logo.mp4" type="video/mp4">
+    </video>
+
+       <p class="subtitle">Creative Studio · Films · Clips · Shorts · Storytelling</p>
+
+
+
+<div class="veena-line">
+
+</div>
+
+</section>
+
+<section id="projects" class="grid-section">
+
+  <div class="project-card">
+    <a href="https://youtu.be/jkrnPKaWTwk" target="_blank">
+      <img src="https://img.youtube.com/vi/jkrnPKaWTwk/maxresdefault.jpg" alt="AI Heartbeat">
+    </a>
+    <h3>AI Heartbeat – Epix ASMR</h3>
+  </div>
+
+<div class="project-card">
+    <a href="https://youtu.be/2AwldZoFTRk" target="_blank">
+      <img src="https://img.youtube.com/vi/2AwldZoFTRk/maxresdefault.jpg" alt="Projet 2">
+    </a>
+    <h3>Turn the lights off night on - Kato, remix Epix ASMR </h3>
+  </div>
+
+  <div class="project-card">
+    <a href="https://youtu.be/gjLy4AzszKs" target="_blank">
+ <img src="https://img.youtube.com/vi/gjLy4AzszKs/maxresdefault.jpg" alt="Projet 2">
+    </a>
+    <h3>Beautiful Lies by GEMINI</h3>
+  </div>
+
+  <div class="project-card">
+   <a href="https://youtu.be/nR2MnUzKI8U" target="_blank">
+     <img src="https://img.youtube.com/vi/nR2MnUzKI8U/maxresdefault.jpg" alt="Projet 2">
+    </a>
+    <h3>OTEP - “Blood Pigs” (AI metal concert-style music video)</h3>
+  </div>
+
+<div class="project-card">
+    <a href="https://youtu.be/EMaOs1nOclE" target="_blank">
+     <img src="https://img.youtube.com/vi/EMaOs1nOclE/maxresdefault.jpg" alt="Projet 2">
+    </a>
+    <h3>Undead Orb - Pray to God by GEMINI</h3>
+  </div>
+
+  <div class="project-card">
+ <a href="https://youtu.be/ygWYydL-75I" target="_blank">
+     <img src="https://img.youtube.com/vi/ygWYydL-75I/maxresdefault.jpg" alt="Projet 2">
+    </a>
+    <h3>Undead Orb - The Ritual</h3>
+  </div>
+
+</section>
+
+<script>
+  function openVideo(videoId) {
+    const iframe = document.getElementById("videoFrame");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
+    document.getElementById("videoModal").style.display = "flex";
+  }
+
+  function closeVideo() {
+    const iframe = document.getElementById("videoFrame");
+    iframe.src = ""; // stoppe la vidéo
+    document.getElementById("videoModal").style.display = "none";
+  }
+</script>
+</body>
+</html>
