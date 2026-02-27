@@ -555,3 +555,80 @@ a {
     background: rgba(255,120,0,0.15);
     box-shadow: 0 0 12px rgba(255,120,0,0.4);
 }
+
+
+/* --- ARTWORKS SECTION --- */
+
+.artworks-section {
+    padding: 160px 5% 120px 5%;
+    text-align: center;
+}
+
+.artworks-title {
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #00aaff, #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.art-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 2px solid rgba(80,150,255,0.35);
+}
+
+.art-item img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(255,140,0,0.55);
+}
+
+/* --- Modal pour Artwork --- */
+
+.art-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
+
+.art-modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    border: 2px solid rgba(80,150,255,0.4);
+    box-shadow: 0 0 25px rgba(0,170,255,0.4);
+}
+
+.close-art {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 12px rgba(255,140,0,0.8);
+    transition: 0.3s ease;
+}
+
+.close-art:hover {
+    color: #ff6600;
+}
+

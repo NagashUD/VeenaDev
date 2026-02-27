@@ -16,7 +16,9 @@
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
         <a href="https://www.patreon.com/VeenaDev" target="_blank">Patreon</a>
+        <a href="#artworks">Artworks</a>
         <a href="#about">About</a>
+        
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -82,7 +84,7 @@
 
   <div class="project-card">
  <a href="https://youtu.be/gRiLHkmh3d0" target="_blank">
-     <img src="https://img.youtube.com/vi/gRiLHkmh3d0/maxresdefault.jpg" alt="Projet 2">
+     <img src="https://img.youtube.com/vi/KmAKzZ_bb6BvuCAY/maxresdefault.jpg" alt="Projet 2">
     </a>
     <h3>Project Zomboid EP Pilot (VeenaDev 2026)</h3>
   </div>
@@ -117,7 +119,36 @@
 
     </div>
 </section>
+<section id="artworks" class="artworks-section">
 
+    <h2 class="artworks-title">Artworks</h2>
+
+    <div class="artworks-grid">
+
+        <!-- Exemple d'image (tu remplaceras les liens) -->
+        <div class="art-item">
+            <img src="images/Lucy_banshee_cute.jpg" alt="Artwork 1" onclick="openArtwork(this.src)">
+        </div>
+
+        <div class="art-item">
+            <img src="images/Lucy_portrait.jpg" alt="Artwork 2" onclick="openArtwork(this.src)">
+        </div>
+
+        <div class="art-item">
+            <img src="images/Lucy_Sky.jpg" alt="Artwork 3" onclick="openArtwork(this.src)">
+        </div>
+
+        <div class="art-item">
+            <img src="images/Punk-Rock-Per.jpg" alt="Artwork 3" onclick="openArtwork(this.src)">
+        </div>
+
+    </div>
+</section>
+<!-- Modal pour afficher l'image en grand -->
+<div id="artModal" class="art-modal">
+    <span class="close-art" onclick="closeArtwork()">&times;</span>
+    <img class="art-modal-content" id="artModalImg">
+</div>
 <section id="about-video" class="about-video-section">
 
     <div class="video-container">
@@ -202,6 +233,20 @@ playBtn.addEventListener("click", () => {
     video.play(); // on lance la vidéo
     video.setAttribute("controls", "controls"); // ajoute les contrôles
 });
+</script>
+
+<script>
+function openArtwork(src) {
+    const modal = document.getElementById("artModal");
+    const modalImg = document.getElementById("artModalImg");
+
+    modal.style.display = "flex";
+    modalImg.src = src;
+}
+
+function closeArtwork() {
+    document.getElementById("artModal").style.display = "none";
+}
 </script>
 </body>
 </html>
