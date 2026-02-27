@@ -15,7 +15,7 @@
         <a href="#">Home</a>
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
-        <a href="#patreon">Patreon</a>
+        <a href="https://www.patreon.com/VeenaDev" target="_blank">Patreon</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -82,6 +82,96 @@
 
 </section>
 
+<section id="services" class="services-section">
+
+    <h2 class="services-title">Our Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>AI Film Production</h3>
+            <p>Creation of cinematic sequences, music videos and storytelling clips powered by modern AI tools.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Visual Design</h3>
+            <p>Concept art, character creation, image remastering and aesthetic development for your projects.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web & Brand Identity</h3>
+            <p>Custom websites, visual identity crafting, logos and dynamic neon-styled branding.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Consulting</h3>
+            <p>Guidance on tools, workflows and creative direction for filmmakers, artists and studios.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about-video" class="about-video-section">
+
+    <div class="video-container">
+        <video id="interviewVideo" preload="metadata">
+            <source src="assets/Override Genesys trailer teaser 2-LR.mp4" type="video/mp4">
+        </video>
+
+        <div class="play-button" id="playButton">▶</div>
+    </div>
+
+</section>
+
+<section id="about" class="about-section">
+
+    <h2 class="about-title">About VeenaDev</h2>
+
+    <div class="about-content">
+        <p>
+            VeenaDev is a creative studio blending technology, art and storytelling.  
+            We explore AI-driven filmmaking, cyberpunk aesthetics, experimental visuals  
+            and emotional narratives through innovative tools and custom workflows.
+        </p>
+
+        <p>
+            Our projects include AI films, character-driven stories, visual design,  
+            interactive concepts, worldbuilding, and technical research across multiple platforms.  
+            Each creation is crafted with precision, passion and a deep focus on atmosphere.
+        </p>
+
+        <p>
+            VeenaDev is built by a duo dedicated to pushing creative boundaries  
+            while keeping an authentic human touch at the center of every work.
+        </p>
+    </div>
+
+</section>
+<section id="contact" class="contact-section">
+
+    <h2 class="contact-title">Contact Us</h2>
+
+    <form class="contact-form"
+          action="https://formsubmit.co/veenadev.contact@gmail.com"
+          method="POST">
+          
+        <!-- Sécurité obligatoire pour éviter les spams -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Nom -->
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <!-- Email -->
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <!-- Message -->
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <!-- Bouton -->
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
 <script>
   function openVideo(videoId) {
     const iframe = document.getElementById("videoFrame");
@@ -94,6 +184,17 @@
     iframe.src = ""; // stoppe la vidéo
     document.getElementById("videoModal").style.display = "none";
   }
+</script>
+
+<script>
+const video = document.getElementById("interviewVideo");
+const playBtn = document.getElementById("playButton");
+
+playBtn.addEventListener("click", () => {
+    playBtn.style.display = "none"; // on masque le bouton
+    video.play(); // on lance la vidéo
+    video.setAttribute("controls", "controls"); // ajoute les contrôles
+});
 </script>
 </body>
 </html>
