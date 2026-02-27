@@ -632,3 +632,25 @@ a {
     color: #ff6600;
 }
 
+/* --- FIX MOBILE HERO VIDEO --- */
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto; /* évite les déformations */
+        padding-top: 140px; /* descend la vidéo sous la navbar */
+        padding-bottom: 40px;
+    }
+
+    .hero-video {
+        width: 95vw; /* occupe presque toute la largeur du mobile */
+        max-width: 95vw; /* empêche tout débordement */
+        height: auto;
+        margin: 0 auto 20px auto;
+        border-width: 1px; /* plus fin pour mobile */
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
