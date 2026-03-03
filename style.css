@@ -421,7 +421,7 @@ a {
 /* --- ABOUT SECTION --- */
 
 .about-section {
-    padding: 20px 5% 120px 5%;
+    padding: 70px 5% 120px 5%;
     text-align: center;
 }
 
@@ -654,3 +654,74 @@ a {
         padding: 0 10px;
     }
 }
+
+/* --- Music & Soundtracks Section --- */
+
+.music-section {
+    padding: 120px 8% 80px 8%;
+    text-align: center;
+}
+
+.music-title {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #00aaff, #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.music-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.music-player {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(0,168,255,0.18);
+    border: 2px solid rgba(80,150,255,0.42);
+}
+
+.music-player iframe {
+    width: 100%;
+    height: 175px;
+    border: none;
+}
+
+/* Language Switch */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    font-size: 16px;
+    z-index: 99999;
+    color: #ffffffcc;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.lang-switch span {
+    padding: 4px 6px;
+    transition: 0.25s ease;
+}
+
+.lang-switch span:hover {
+    color: #00aaff;
+    text-shadow: 0 0 6px #00aaff;
+}
+
+.lang-active {
+    color: #ff6600 !important;
+    text-shadow: 0 0 6px #ff6600;
+}
+
+

@@ -14,13 +14,18 @@
     <nav>
         <a href="#">Home</a>
         <a href="#projects">Projects</a>
+        <a href="#music">Music</a>
         <a href="#services">Services</a>
         <a href="https://www.patreon.com/VeenaDev" target="_blank">Patreon</a>
         <a href="#artworks">Artworks</a>
-        <a href="#about">About</a>
-        
+        <a href="#about">About</a>        
         <a href="#contact">Contact</a>
+
+
     </nav>
+<div class="lang-switch">
+    <span data-lang="fr">FR</span> | <span data-lang="en">EN</span>
+</div>
 </header>
 
 <section class="hero">
@@ -98,6 +103,17 @@
 
 </section>
 
+<!-- Music & Soundtracks Section -->
+<section id="music" class="music-section">
+    <h2 class="music-title">Music & Soundtracks</h2>
+
+    <p class="music-subtitle">Original compositions and atmospheric themes by VeenaDev</p>
+
+    <div class="music-player">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2276111513&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nagash-carstein" title="Nagash Carstein" target="_blank" style="color: #cccccc; text-decoration: none;">Nagash Carstein</a> · <a href="https://soundcloud.com/nagash-carstein/silentveil" title="Silent Veil by VeenaDev" target="_blank" style="color: #cccccc; text-decoration: none;">Silent Veil by VeenaDev</a></div>
+    </div>
+</section>
+
 <section id="services" class="services-section">
 
     <h2 class="services-title">Our Services</h2>
@@ -122,6 +138,14 @@
         <div class="service-card">
             <h3>Consulting</h3>
             <p>Guidance on tools, workflows and creative direction for filmmakers, artists and studios.</p>
+        </div>
+
+<div class="service-card">
+           <h3>Original Music Composition</h3>
+    <p>
+        Custom themes, emotional soundscapes and atmospheric scores crafted for films, clips,
+        trailers and storytelling universes. Unique sound identity tailored to your project.
+    </p>
         </div>
 
     </div>
@@ -172,24 +196,19 @@
 
     <h2 class="about-title">About VeenaDev</h2>
 
-    <div class="about-content">
-        <p>
-            VeenaDev is a creative studio blending technology, art and storytelling.  
-            We explore AI-driven filmmaking, cyberpunk aesthetics, experimental visuals  
-            and emotional narratives through innovative tools and custom workflows.
-        </p>
+<div class="about-content">
+    <p id="about1">
+        VeenaDev is a creative studio blending technology, art and storytelling.
+    </p>
 
-        <p>
-            Our projects include AI films, character-driven stories, visual design,  
-            interactive concepts, worldbuilding, and technical research across multiple platforms.  
-            Each creation is crafted with precision, passion and a deep focus on atmosphere.
-        </p>
+    <p id="about2">
+        Our projects include AI films, character-driven stories, visual design, interactive concepts and experimental research.
+    </p>
 
-        <p>
-            VeenaDev is built by a duo dedicated to pushing creative boundaries  
-            while keeping an authentic human touch at the center of every work.
-        </p>
-    </div>
+    <p id="about3">
+        VeenaDev is built by a duo dedicated to pushing creative boundaries while keeping an authentic human touch at the center of every work.
+    </p>
+</div>
 
 </section>
 <section id="contact" class="contact-section">
@@ -254,6 +273,132 @@ function openArtwork(src) {
 function closeArtwork() {
     document.getElementById("artModal").style.display = "none";
 }
+</script>
+
+<script>
+// Textes FR/EN
+const translations = {
+    fr: {
+        home: "Accueil",
+        projects: "Projets",
+        music: "Musique",
+        services: "Services",
+        artworks: "Galeries",
+        about: "À propos",
+        contact: "Contact",
+        heroSubtitle: "Studio Créatif · Films · Clips · Shorts · Storytelling",
+
+        // Titles / sections
+        musicTitle: "Musiques & Bandes-son",
+        musicSubtitle: "Compositions originales et thèmes atmosphériques par VeenaDev",
+
+        servicesTitle: "Nos Services",
+        service1: "Production de Films IA",
+        service1txt: "Création de séquences cinématiques, clips musicaux et vidéos narratives.",
+        service2: "Design Visuel",
+        service2txt: "Concept art, création de personnages, remastering d’images.",
+        service3: "Web & Identité Visuelle",
+        service3txt: "Sites web personnalisés, logos, branding cyber-néon.",
+        service4: "Consulting",
+        service4txt: "Accompagnement technique et créatif pour artistes et studios.",
+        service5: "Composition Musicale Originale",
+        service5txt: "Thèmes émotionnels, ambiances et bandes-son adaptées à vos univers.",
+
+        aboutTitle: "À propos de VeenaDev",
+        contactTitle: "Contactez-nous",
+
+
+about1: "VeenaDev est un studio créatif mêlant technologie, art et narration.",
+about2: "Nos projets incluent des films IA, des histoires centrées sur les personnages, du design visuel, des concepts interactifs et des recherches expérimentales.",
+about3: "VeenaDev est porté par un duo dédié à repousser les limites créatives tout en gardant une touche humaine authentique au cœur de chaque œuvre.",
+    },
+
+    en: {
+        home: "Home",
+        projects: "Projects",
+        music: "Music",
+        services: "Services",
+        artworks: "Artworks",
+        about: "About",
+        contact: "Contact",
+        heroSubtitle: "Creative Studio · Films · Clips · Shorts · Storytelling",
+
+        musicTitle: "Music & Soundtracks",
+        musicSubtitle: "Original compositions and atmospheric themes by VeenaDev",
+
+        servicesTitle: "Our Services",
+        service1: "AI Film Production",
+        service1txt: "Creation of cinematic sequences, music videos and storytelling clips.",
+        service2: "Visual Design",
+        service2txt: "Concept art, character creation, image remastering.",
+        service3: "Web & Brand Identity",
+        service3txt: "Custom websites, identity crafting, logos and neon-styled branding.",
+        service4: "Consulting",
+        service4txt: "Guidance on tools, workflows and creative direction.",
+        service5: "Original Music Composition",
+        service5txt: "Emotional themes and unique sound identity crafted for your project.",
+
+        aboutTitle: "About VeenaDev",
+        contactTitle: "Contact Us",
+about1: "VeenaDev is a creative studio blending technology, art and storytelling.",
+about2: "Our projects include AI films, character-driven stories, visual design, interactive concepts and experimental research.",
+about3: "VeenaDev is built by a duo dedicated to pushing creative boundaries while keeping an authentic human touch at the center of every work.",
+    }
+};
+
+// Application des langues
+function applyLang(lang) {
+    document.querySelector('[href="#"]').textContent = translations[lang].home;
+    document.querySelector('[href="#projects"]').textContent = translations[lang].projects;
+    document.querySelector('[href="#music"]').textContent = translations[lang].music;
+    document.querySelector('[href="#services"]').textContent = translations[lang].services;
+    document.querySelector('[href="#artworks"]').textContent = translations[lang].artworks;
+    document.querySelector('[href="#about"]').textContent = translations[lang].about;
+    document.querySelector('[href="#contact"]').textContent = translations[lang].contact;
+
+    document.querySelector(".subtitle").textContent = translations[lang].heroSubtitle;
+
+    document.querySelector(".music-title").textContent = translations[lang].musicTitle;
+    document.querySelector(".music-subtitle").textContent = translations[lang].musicSubtitle;
+
+    document.querySelector(".services-title").textContent = translations[lang].servicesTitle;
+
+    const s = translations[lang];
+    const serviceTitles = document.querySelectorAll(".service-card h3");
+    const serviceTexts = document.querySelectorAll(".service-card p");
+
+    serviceTitles[0].textContent = s.service1;
+    serviceTexts[0].textContent = s.service1txt;
+
+    serviceTitles[1].textContent = s.service2;
+    serviceTexts[1].textContent = s.service2txt;
+
+    serviceTitles[2].textContent = s.service3;
+    serviceTexts[2].textContent = s.service3txt;
+
+    serviceTitles[3].textContent = s.service4;
+    serviceTexts[3].textContent = s.service4txt;
+
+    serviceTitles[4].textContent = s.service5;
+    serviceTexts[4].textContent = s.service5txt;
+
+    document.querySelector(".about-title").textContent = translations[lang].aboutTitle;
+    document.querySelector(".contact-title").textContent = translations[lang].contactTitle;
+
+document.getElementById("about1").textContent = translations[lang].about1;
+document.getElementById("about2").textContent = translations[lang].about2;
+document.getElementById("about3").textContent = translations[lang].about3;
+
+    document.querySelectorAll(".lang-switch span").forEach(el => el.classList.remove("lang-active"));
+    document.querySelector(`[data-lang="${lang}"]`).classList.add("lang-active");
+}
+
+document.querySelectorAll(".lang-switch span").forEach(el => {
+    el.addEventListener("click", () => applyLang(el.dataset.lang));
+});
+
+// Langue par défaut
+applyLang("en");
 </script>
 </body>
 </html>
