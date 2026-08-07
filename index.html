@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VeenaDev</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .website-card-link {
+            display: block;
+            height: 100%;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .visit-site {
+            display: inline-block;
+            margin-top: 14px;
+            color: #7bc8ff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            transition: color .2s ease, transform .2s ease;
+        }
+
+        .website-card:hover .visit-site {
+            color: #ff9a4d;
+            transform: translateX(3px);
+        }
+
+        .site-preview img.real-site-thumb {
+            display: block;
+            width: 100%;
+            height: calc(100% - 28px);
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .site-preview.site-preview-plain .mock-page {
+            padding: 0;
+            height: calc(100% - 28px);
+        }
+
+        .site-preview.site-preview-plain {
+            background: #0d0d12;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -13,15 +56,13 @@
 <header class="topnav">
     <nav>
         <a href="#">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#music">Music</a>
+        <a href="#web-offer">Websites</a>
+        <a href="#web-projects">Portfolio</a>
+        <a href="#quote">Quote</a>
+        <a href="#projects">Creative Projects</a>
         <a href="#services">Services</a>
-        <a href="https://www.patreon.com/VeenaDev" target="_blank">Patreon</a>
-        <a href="#artworks">Artworks</a>
-        <a href="#about">About</a>        
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-
-
     </nav>
 <div class="lang-switch">
     <span data-lang="fr">FR</span> | <span data-lang="en">EN</span>
@@ -33,14 +74,151 @@
         <source src="assets/veenadev-logo.mp4" type="video/mp4">
     </video>
 
-       <p class="subtitle">Creative Studio · Films · Clips · Shorts · Storytelling</p>
+       <p class="subtitle">Showcase websites · Redesign · Tailor-made web solutions</p>
+       <h1 class="web-hero-title">A professional website built around your business.</h1>
+       <p class="web-hero-text">
+           VeenaDev creates modern, clear and responsive websites for small businesses,
+           artisans, shops, associations and independent professionals.
+       </p>
 
-
+       <div class="web-hero-actions">
+           <a class="web-btn web-btn-primary" href="#web-projects">See our websites</a>
+           <a class="web-btn" href="#quote">Request a quote</a>
+       </div>
 
 <div class="veena-line">
 
 </div>
 
+</section>
+
+
+<section id="web-offer" class="web-offer-section">
+    <div class="web-section-heading">
+        <span class="web-eyebrow">WEB DESIGN & DEVELOPMENT</span>
+        <h2>Websites designed for real businesses</h2>
+        <p>
+            A clear, modern online presence tailored to your activity - without unnecessary complexity.
+        </p>
+    </div>
+
+    <div class="web-services-grid">
+        <article class="web-service-card">
+            <div class="web-service-number">01</div>
+            <h3>Showcase websites</h3>
+            <p>Present your business, services, expertise and contact details with a professional responsive website.</p>
+        </article>
+
+        <article class="web-service-card">
+            <div class="web-service-number">02</div>
+            <h3>Redesign & modernisation</h3>
+            <p>Refresh an existing website with a cleaner design, better readability and a stronger professional image.</p>
+        </article>
+
+        <article class="web-service-card">
+            <div class="web-service-number">03</div>
+            <h3>Custom web solutions</h3>
+            <p>Forms, simple databases and specific features adapted to the practical needs of your activity.</p>
+        </article>
+
+        <article class="web-service-card">
+            <div class="web-service-number">04</div>
+            <h3>Support & maintenance</h3>
+            <p>Updates, hosting support and ongoing assistance so your website can evolve with your business.</p>
+        </article>
+    </div>
+</section>
+
+<section id="web-projects" class="web-projects-section">
+    <div class="web-section-heading">
+        <span class="web-eyebrow">WEB PORTFOLIO</span>
+        <h2>Recent website projects</h2>
+        <p>Discover a selection of websites and web experiences created by VeenaDev.</p>
+    </div>
+
+    <div class="website-grid">
+
+        <article class="website-card">
+            <a class="website-card-link"
+               href="https://isuperdelivery.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit the iSuperDelivery website">
+                <div class="site-preview site-preview-plain">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img class="real-site-thumb" src="portfolio-thumbnails/isuperdelivery.jpg" alt="Thumbnail of the iSuperDelivery website homepage">
+                </div>
+                <div class="website-card-copy">
+                    <span class="site-type">CORPORATE WEBSITE</span>
+                    <h3>iSuperDelivery</h3>
+                    <p>Bilingual showcase website for an international import-export company.</p>
+                    <span class="visit-site">Visit website →</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="website-card">
+            <a class="website-card-link"
+               href="https://tina-vale.vercel.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit the Tina Vale website">
+                <div class="site-preview site-preview-plain">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img class="real-site-thumb" src="portfolio-thumbnails/tina-vale.jpg" alt="Thumbnail of the Tina Vale website homepage">
+                </div>
+                <div class="website-card-copy">
+                    <span class="site-type">ARTIST WEBSITE</span>
+                    <h3>Tina Vale</h3>
+                    <p>Artist website combining music, videos, gallery, news and album presentation.</p>
+                    <span class="visit-site">Visit website →</span>
+                </div>
+            </a>
+        </article>
+
+        <article class="website-card">
+            <a class="website-card-link"
+               href="https://wirelessoverride.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit the Wireless Override website">
+                <div class="site-preview site-preview-plain">
+                    <div class="browser-bar"><span></span><span></span><span></span></div>
+                    <img class="real-site-thumb" src="portfolio-thumbnails/wireless-override.jpg" alt="Thumbnail of the Wireless Override web application">
+                </div>
+                <div class="website-card-copy">
+                    <span class="site-type">WEB APPLICATION</span>
+                    <h3>Wireless: Override</h3>
+                    <p>Interactive web project with account creation, authentication and game-oriented features.</p>
+                    <span class="visit-site">Visit website →</span>
+                </div>
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<section id="quote" class="quote-section">
+    <div class="quote-panel">
+        <div>
+            <span class="web-eyebrow">YOUR PROJECT</span>
+            <h2>Need a professional website?</h2>
+            <p>
+                Tell us about your business and your needs. We will discuss a solution adapted to your project and budget.
+            </p>
+        </div>
+        <a class="web-btn web-btn-primary quote-button" href="#contact">Request a quote</a>
+    </div>
+</section>
+
+<section class="creative-heading-section">
+    <div class="web-section-heading">
+        <span class="web-eyebrow">VEENADEV CREATIVE STUDIO</span>
+        <h2>Creative projects</h2>
+        <p>
+            Beyond web development, VeenaDev also explores AI filmmaking, visual creation, music and storytelling.
+        </p>
+    </div>
 </section>
 
 <section id="projects" class="grid-section">
@@ -168,12 +346,15 @@
     <div class="music-player">
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2285032166&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nagash-carstein" title="Nagash Carstein" target="_blank" style="color: #cccccc; text-decoration: none;">Nagash Carstein</a> · <a href="https://soundcloud.com/nagash-carstein/origins" title="Origins" target="_blank" style="color: #cccccc; text-decoration: none;">Origins</a></div>
 </div>
+
     <div class="music-player">
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2290050668&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nagash-carstein" title="Nagash Carstein" target="_blank" style="color: #cccccc; text-decoration: none;">Nagash Carstein</a> · <a href="https://soundcloud.com/nagash-carstein/frozen-ember-veenadev" title="Frozen Ember - VeenaDev" target="_blank" style="color: #cccccc; text-decoration: none;">Frozen Ember - VeenaDev</a></div>
 </div>
+
    <div class="music-player">
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2310719948&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nagash-carstein" title="Nagash Carstein" target="_blank" style="color: #cccccc; text-decoration: none;">Nagash Carstein</a> · <a href="https://soundcloud.com/nagash-carstein/the-door-you-closed-veenadev" title="The door you closed - (VeenaDev 2026)" target="_blank" style="color: #cccccc; text-decoration: none;">The door you closed - (VeenaDev 2026)</a></div>
 </div>
+
 </section>
 
 <section id="services" class="services-section">
@@ -260,15 +441,15 @@
 
 <div class="about-content">
     <p id="about1">
-        VeenaDev is a creative studio blending technology, art and storytelling.
+        VeenaDev specializes in modern website creation and tailor-made digital solutions.
     </p>
 
     <p id="about2">
-        Our projects include AI films, character-driven stories, visual design, interactive concepts and experimental research.
+        We help small businesses, artisans, shops, associations, local producers and independent professionals build a clear, modern and effective online presence.
     </p>
 
     <p id="about3">
-        VeenaDev is built by a duo dedicated to pushing creative boundaries while keeping an authentic human touch at the center of every work.
+        Alongside web development, VeenaDev also develops creative projects involving visual design, AI video, music, storytelling and emerging technologies.
     </p>
 </div>
 
@@ -338,129 +519,306 @@ function closeArtwork() {
 </script>
 
 <script>
-// Textes FR/EN
+// ==========================================================
+// VeenaDev — système FR / EN
+// Toutes les sections commerciales + créatives sont traduites.
+// ==========================================================
 const translations = {
     fr: {
-        home: "Accueil",
-        projects: "Projets",
-        music: "Musique",
-        services: "Services",
-        artworks: "Galeries",
-        about: "À propos",
-        contact: "Contact",
-        heroSubtitle: "Studio Créatif · Films · Clips · Shorts · Storytelling",
+        nav: {
+            home: "Accueil",
+            websites: "Sites web",
+            portfolio: "Réalisations",
+            quote: "Devis",
+            projects: "Projets créatifs",
+            services: "Services",
+            about: "À propos",
+            contact: "Contact"
+        },
 
-        // Titles / sections
+        hero: {
+            subtitle: "Sites vitrines · Refonte · Solutions web sur mesure",
+            title: "Un site professionnel pensé autour de votre activité.",
+            text: "VeenaDev crée des sites modernes, clairs et responsives pour les petites entreprises, artisans, commerçants, associations et travailleurs indépendants.",
+            websitesBtn: "Voir nos réalisations",
+            quoteBtn: "Demander un devis"
+        },
+
+        webOffer: {
+            eyebrow: "DESIGN & DÉVELOPPEMENT WEB",
+            title: "Des sites conçus pour les besoins réels des entreprises",
+            text: "Une présence en ligne claire, moderne et adaptée à votre activité - sans complexité inutile.",
+            cards: [
+                ["Sites vitrines", "Présentez votre activité, vos services, votre savoir-faire et vos coordonnées avec un site professionnel adapté aux mobiles."],
+                ["Refonte & modernisation", "Modernisez un site existant avec un design plus actuel, une meilleure lisibilité et une image professionnelle renforcée."],
+                ["Solutions web sur mesure", "Formulaires, bases de données simples et fonctionnalités spécifiques adaptées aux besoins concrets de votre activité."],
+                ["Accompagnement & maintenance", "Mises à jour, aide à l’hébergement et suivi dans le temps pour faire évoluer votre site avec votre activité."]
+            ]
+        },
+
+        portfolio: {
+            eyebrow: "RÉALISATIONS WEB",
+            title: "Nos projets web récents",
+            text: "Découvrez une sélection de sites et d’expériences web réalisés par VeenaDev.",
+            visit: "Voir le site →",
+            cards: [
+                ["SITE VITRINE ENTREPRISE", "iSuperDelivery", "Site vitrine bilingue conçu pour une entreprise spécialisée dans l’import-export international."],
+                ["SITE ARTISTIQUE", "Tina Vale", "Site d’artiste réunissant musique, vidéos, galerie, actualités et présentation d’album."],
+                ["APPLICATION WEB", "Wireless: Override", "Projet web interactif intégrant création de compte, authentification et fonctionnalités orientées jeu."]
+            ]
+        },
+
+        quote: {
+            eyebrow: "VOTRE PROJET",
+            title: "Besoin d’un site internet professionnel ?",
+            text: "Parlez-nous de votre activité et de vos besoins. Nous étudierons avec vous une solution adaptée à votre projet et à votre budget.",
+            button: "Demander un devis"
+        },
+
+        creative: {
+            eyebrow: "STUDIO CRÉATIF VEENADEV",
+            title: "Projets créatifs",
+            text: "En parallèle du développement web, VeenaDev explore également la création vidéo par IA, le design visuel, la musique et le storytelling."
+        },
+
         musicTitle: "Musiques & Bandes-son",
         musicSubtitle: "Compositions originales et thèmes atmosphériques par VeenaDev",
 
         servicesTitle: "Nos Services",
-        service1: "Production de Films IA",
-        service1txt: "Création de séquences cinématiques, clips musicaux et vidéos narratives.",
-        service2: "Design Visuel",
-        service2txt: "Concept art, création de personnages, remastering d’images.",
-        service3: "Web & Identité Visuelle",
-        service3txt: "Sites web personnalisés, logos, branding cyber-néon.",
-        service4: "Consulting",
-        service4txt: "Accompagnement technique et créatif pour artistes et studios.",
-        service5: "Composition Musicale Originale",
-        service5txt: "Thèmes émotionnels, ambiances et bandes-son adaptées à vos univers.",
+        services: [
+            ["Production de films IA", "Création de séquences cinématiques, clips musicaux et vidéos narratives."],
+            ["Design visuel", "Concept art, création de personnages et remastering d’images."],
+            ["Web & identité visuelle", "Sites web personnalisés, identité visuelle, logos et branding dynamique."],
+            ["Consulting", "Accompagnement technique et créatif sur les outils, workflows et directions artistiques."],
+            ["Composition musicale originale", "Thèmes émotionnels, ambiances et bandes-son originales adaptés à vos projets."]
+        ],
+
+        artworksTitle: "Galerie",
 
         aboutTitle: "À propos de VeenaDev",
+        about: [
+            "VeenaDev est spécialisé dans la création de sites web modernes et de solutions numériques sur mesure.",
+            "Nous accompagnons les petites entreprises, artisans, commerçants, associations, producteurs locaux et travailleurs indépendants dans le développement d’une présence en ligne claire, moderne et efficace.",
+            "En parallèle du développement web, VeenaDev développe également des projets créatifs autour du design visuel, de la vidéo par IA, de la musique, du storytelling et des nouvelles technologies."
+        ],
+
         contactTitle: "Contactez-nous",
-
-
-about1: "VeenaDev est un studio créatif mêlant technologie, art et narration.",
-about2: "Nos projets incluent des films IA, des histoires centrées sur les personnages, du design visuel, des concepts interactifs et des recherches expérimentales.",
-about3: "VeenaDev est porté par un duo dédié à repousser les limites créatives tout en gardant une touche humaine authentique au cœur de chaque œuvre.",
+        contact: {
+            name: "Votre nom",
+            email: "Votre e-mail",
+            message: "Parlez-nous de votre projet",
+            button: "Envoyer"
+        }
     },
 
     en: {
-        home: "Home",
-        projects: "Projects",
-        music: "Music",
-        services: "Services",
-        artworks: "Artworks",
-        about: "About",
-        contact: "Contact",
-        heroSubtitle: "Creative Studio · Films · Clips · Shorts · Storytelling",
+        nav: {
+            home: "Home",
+            websites: "Websites",
+            portfolio: "Portfolio",
+            quote: "Quote",
+            projects: "Creative Projects",
+            services: "Services",
+            about: "About",
+            contact: "Contact"
+        },
+
+        hero: {
+            subtitle: "Showcase websites · Redesign · Tailor-made web solutions",
+            title: "A professional website built around your business.",
+            text: "VeenaDev creates modern, clear and responsive websites for small businesses, artisans, shops, associations and independent professionals.",
+            websitesBtn: "See our websites",
+            quoteBtn: "Request a quote"
+        },
+
+        webOffer: {
+            eyebrow: "WEB DESIGN & DEVELOPMENT",
+            title: "Websites designed for real businesses",
+            text: "A clear, modern online presence tailored to your activity - without unnecessary complexity.",
+            cards: [
+                ["Showcase websites", "Present your business, services, expertise and contact details with a professional responsive website."],
+                ["Redesign & modernisation", "Refresh an existing website with a cleaner design, better readability and a stronger professional image."],
+                ["Custom web solutions", "Forms, simple databases and specific features adapted to the practical needs of your activity."],
+                ["Support & maintenance", "Updates, hosting support and ongoing assistance so your website can evolve with your business."]
+            ]
+        },
+
+        portfolio: {
+            eyebrow: "WEB PORTFOLIO",
+            title: "Recent website projects",
+            text: "Discover a selection of websites and web experiences created by VeenaDev.",
+            visit: "Visit website →",
+            cards: [
+                ["CORPORATE WEBSITE", "iSuperDelivery", "Bilingual showcase website for a company specializing in international import-export."],
+                ["ARTIST WEBSITE", "Tina Vale", "Artist website combining music, videos, gallery, news and album presentation."],
+                ["WEB APPLICATION", "Wireless: Override", "Interactive web project with account creation, authentication and game-oriented features."]
+            ]
+        },
+
+        quote: {
+            eyebrow: "YOUR PROJECT",
+            title: "Need a professional website?",
+            text: "Tell us about your business and your needs. We will discuss a solution adapted to your project and budget.",
+            button: "Request a quote"
+        },
+
+        creative: {
+            eyebrow: "VEENADEV CREATIVE STUDIO",
+            title: "Creative projects",
+            text: "Alongside web development, VeenaDev also explores AI filmmaking, visual design, music and storytelling."
+        },
 
         musicTitle: "Music & Soundtracks",
         musicSubtitle: "Original compositions and atmospheric themes by VeenaDev",
 
         servicesTitle: "Our Services",
-        service1: "AI Film Production",
-        service1txt: "Creation of cinematic sequences, music videos and storytelling clips.",
-        service2: "Visual Design",
-        service2txt: "Concept art, character creation, image remastering.",
-        service3: "Web & Brand Identity",
-        service3txt: "Custom websites, identity crafting, logos and neon-styled branding.",
-        service4: "Consulting",
-        service4txt: "Guidance on tools, workflows and creative direction.",
-        service5: "Original Music Composition",
-        service5txt: "Emotional themes and unique sound identity crafted for your project.",
+        services: [
+            ["AI Film Production", "Creation of cinematic sequences, music videos and storytelling clips."],
+            ["Visual Design", "Concept art, character creation and image remastering."],
+            ["Web & Brand Identity", "Custom websites, visual identity, logos and dynamic branding."],
+            ["Consulting", "Guidance on tools, workflows and creative direction."],
+            ["Original Music Composition", "Emotional themes, atmospheric soundscapes and original scores tailored to your projects."]
+        ],
+
+        artworksTitle: "Artworks",
 
         aboutTitle: "About VeenaDev",
+        about: [
+            "VeenaDev specializes in modern website creation and tailor-made digital solutions.",
+            "We help small businesses, artisans, shops, associations, local producers and independent professionals build a clear, modern and effective online presence.",
+            "Alongside web development, VeenaDev also develops creative projects involving visual design, AI video, music, storytelling and emerging technologies."
+        ],
+
         contactTitle: "Contact Us",
-about1: "VeenaDev is a creative studio blending technology, art and storytelling.",
-about2: "Our projects include AI films, character-driven stories, visual design, interactive concepts and experimental research.",
-about3: "VeenaDev is built by a duo dedicated to pushing creative boundaries while keeping an authentic human touch at the center of every work.",
+        contact: {
+            name: "Your Name",
+            email: "Your Email",
+            message: "Tell us about your project",
+            button: "Send Message"
+        }
     }
 };
 
-// Application des langues
-function applyLang(lang) {
-    document.querySelector('[href="#"]').textContent = translations[lang].home;
-    document.querySelector('[href="#projects"]').textContent = translations[lang].projects;
-    document.querySelector('[href="#music"]').textContent = translations[lang].music;
-    document.querySelector('[href="#services"]').textContent = translations[lang].services;
-    document.querySelector('[href="#artworks"]').textContent = translations[lang].artworks;
-    document.querySelector('[href="#about"]').textContent = translations[lang].about;
-    document.querySelector('[href="#contact"]').textContent = translations[lang].contact;
-
-    document.querySelector(".subtitle").textContent = translations[lang].heroSubtitle;
-
-    document.querySelector(".music-title").textContent = translations[lang].musicTitle;
-    document.querySelector(".music-subtitle").textContent = translations[lang].musicSubtitle;
-
-    document.querySelector(".services-title").textContent = translations[lang].servicesTitle;
-
-    const s = translations[lang];
-    const serviceTitles = document.querySelectorAll(".service-card h3");
-    const serviceTexts = document.querySelectorAll(".service-card p");
-
-    serviceTitles[0].textContent = s.service1;
-    serviceTexts[0].textContent = s.service1txt;
-
-    serviceTitles[1].textContent = s.service2;
-    serviceTexts[1].textContent = s.service2txt;
-
-    serviceTitles[2].textContent = s.service3;
-    serviceTexts[2].textContent = s.service3txt;
-
-    serviceTitles[3].textContent = s.service4;
-    serviceTexts[3].textContent = s.service4txt;
-
-    serviceTitles[4].textContent = s.service5;
-    serviceTexts[4].textContent = s.service5txt;
-
-    document.querySelector(".about-title").textContent = translations[lang].aboutTitle;
-    document.querySelector(".contact-title").textContent = translations[lang].contactTitle;
-
-document.getElementById("about1").textContent = translations[lang].about1;
-document.getElementById("about2").textContent = translations[lang].about2;
-document.getElementById("about3").textContent = translations[lang].about3;
-
-    document.querySelectorAll(".lang-switch span").forEach(el => el.classList.remove("lang-active"));
-    document.querySelector(`[data-lang="${lang}"]`).classList.add("lang-active");
+function setText(selector, value) {
+    const el = document.querySelector(selector);
+    if (el) el.textContent = value;
 }
 
-document.querySelectorAll(".lang-switch span").forEach(el => {
-    el.addEventListener("click", () => applyLang(el.dataset.lang));
+function setPlaceholder(selector, value) {
+    const el = document.querySelector(selector);
+    if (el) el.placeholder = value;
+}
+
+function applyLang(lang) {
+    if (!translations[lang]) lang = "fr";
+    const t = translations[lang];
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("veenadev-lang", lang);
+
+    // Navigation
+    setText('.topnav a[href="#"]', t.nav.home);
+    setText('.topnav a[href="#web-offer"]', t.nav.websites);
+    setText('.topnav a[href="#web-projects"]', t.nav.portfolio);
+    setText('.topnav a[href="#quote"]', t.nav.quote);
+    setText('.topnav a[href="#projects"]', t.nav.projects);
+    setText('.topnav a[href="#services"]', t.nav.services);
+    setText('.topnav a[href="#about"]', t.nav.about);
+    setText('.topnav a[href="#contact"]', t.nav.contact);
+
+    // Hero
+    setText('.hero .subtitle', t.hero.subtitle);
+    setText('.hero .web-hero-title', t.hero.title);
+    setText('.hero .web-hero-text', t.hero.text);
+    setText('.hero .web-hero-actions a[href="#web-projects"]', t.hero.websitesBtn);
+    setText('.hero .web-hero-actions a[href="#quote"]', t.hero.quoteBtn);
+
+    // Web offer
+    setText('#web-offer .web-eyebrow', t.webOffer.eyebrow);
+    setText('#web-offer .web-section-heading h2', t.webOffer.title);
+    setText('#web-offer .web-section-heading p', t.webOffer.text);
+    const webCards = document.querySelectorAll('#web-offer .web-service-card');
+    webCards.forEach((card, i) => {
+        if (!t.webOffer.cards[i]) return;
+        const title = card.querySelector('h3');
+        const text = card.querySelector('p');
+        if (title) title.textContent = t.webOffer.cards[i][0];
+        if (text) text.textContent = t.webOffer.cards[i][1];
+    });
+
+    // Web portfolio
+    setText('#web-projects .web-eyebrow', t.portfolio.eyebrow);
+    setText('#web-projects .web-section-heading h2', t.portfolio.title);
+    setText('#web-projects .web-section-heading p', t.portfolio.text);
+    const portfolioCards = document.querySelectorAll('#web-projects .website-card');
+    portfolioCards.forEach((card, i) => {
+        if (!t.portfolio.cards[i]) return;
+        const label = card.querySelector('.website-card-copy .site-type');
+        const title = card.querySelector('.website-card-copy h3');
+        const text = card.querySelector('.website-card-copy p');
+        const visit = card.querySelector('.website-card-copy .visit-site');
+        if (label) label.textContent = t.portfolio.cards[i][0];
+        if (title) title.textContent = t.portfolio.cards[i][1];
+        if (text) text.textContent = t.portfolio.cards[i][2];
+        if (visit) visit.textContent = t.portfolio.visit;
+    });
+
+    // Quote
+    setText('#quote .web-eyebrow', t.quote.eyebrow);
+    setText('#quote h2', t.quote.title);
+    setText('#quote p', t.quote.text);
+    setText('#quote .quote-button', t.quote.button);
+
+    // Creative intro
+    setText('.creative-heading-section .web-eyebrow', t.creative.eyebrow);
+    setText('.creative-heading-section h2', t.creative.title);
+    setText('.creative-heading-section p', t.creative.text);
+
+    // Music
+    setText('.music-title', t.musicTitle);
+    setText('.music-subtitle', t.musicSubtitle);
+
+    // Existing services
+    setText('.services-title', t.servicesTitle);
+    const serviceCards = document.querySelectorAll('#services .service-card');
+    serviceCards.forEach((card, i) => {
+        if (!t.services[i]) return;
+        const title = card.querySelector('h3');
+        const text = card.querySelector('p');
+        if (title) title.textContent = t.services[i][0];
+        if (text) text.textContent = t.services[i][1];
+    });
+
+    // Artworks
+    setText('.artworks-title', t.artworksTitle);
+
+    // About — web first, creative second
+    setText('.about-title', t.aboutTitle);
+    setText('#about1', t.about[0]);
+    setText('#about2', t.about[1]);
+    setText('#about3', t.about[2]);
+
+    // Contact
+    setText('.contact-title', t.contactTitle);
+    setPlaceholder('.contact-form input[name="name"]', t.contact.name);
+    setPlaceholder('.contact-form input[name="email"]', t.contact.email);
+    setPlaceholder('.contact-form textarea[name="message"]', t.contact.message);
+    setText('.contact-form button[type="submit"]', t.contact.button);
+
+    // Active language state
+    document.querySelectorAll('.lang-switch span').forEach(el => el.classList.remove('lang-active'));
+    const active = document.querySelector(`[data-lang="${lang}"]`);
+    if (active) active.classList.add('lang-active');
+}
+
+document.querySelectorAll('.lang-switch span').forEach(el => {
+    el.addEventListener('click', () => applyLang(el.dataset.lang));
 });
 
-// Langue par défaut
-applyLang("en");
+// Keep the user's last choice. On first visit, use browser language.
+const savedLang = localStorage.getItem('veenadev-lang');
+const browserLang = (navigator.language || '').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+applyLang(savedLang || browserLang);
 </script>
 </body>
 </html>

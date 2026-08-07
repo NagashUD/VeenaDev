@@ -725,3 +725,428 @@ a {
 }
 
 
+
+
+/* ==========================================================
+   BGE TEST — BUSINESS-FIRST WEB OFFER
+   Added for the VeenaDev homepage restructuring prototype.
+   ========================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.web-hero-title {
+    max-width: 900px;
+    margin: 8px auto 14px auto;
+    padding: 0 24px;
+    font-size: clamp(30px, 4.2vw, 54px);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.web-hero-text {
+    max-width: 760px;
+    padding: 0 24px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.web-hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.web-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 25px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    color: #fff;
+    background: rgba(0,0,0,0.28);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.web-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,170,255,.8);
+    box-shadow: 0 0 18px rgba(0,170,255,.22);
+}
+
+.web-btn-primary {
+    border-color: rgba(255,102,0,.65);
+    background: linear-gradient(110deg, rgba(0,170,255,.14), rgba(255,102,0,.18));
+    box-shadow: 0 0 22px rgba(255,102,0,.10);
+}
+
+.web-offer-section,
+.web-projects-section,
+.quote-section,
+.creative-heading-section {
+    position: relative;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.web-offer-section {
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+.web-projects-section {
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.quote-section {
+    padding-top: 25px;
+    padding-bottom: 120px;
+}
+
+.creative-heading-section {
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.web-section-heading {
+    max-width: 850px;
+    margin: 0 auto 48px auto;
+    text-align: center;
+}
+
+.web-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #7bc8ff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+}
+
+.web-section-heading h2,
+.quote-panel h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, #00aaff, #ffffff 48%, #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.web-section-heading p,
+.quote-panel p {
+    color: rgba(255,255,255,.68);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.web-services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.web-service-card {
+    position: relative;
+    min-height: 225px;
+    padding: 28px 24px;
+    border: 1px solid rgba(80,150,255,.30);
+    border-radius: 14px;
+    background: linear-gradient(150deg, rgba(14,26,38,.78), rgba(0,0,0,.66));
+    overflow: hidden;
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.web-service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,140,0,.65);
+    box-shadow: 0 12px 35px rgba(0,0,0,.25), 0 0 18px rgba(255,140,0,.16);
+}
+
+.web-service-number {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 42px;
+    font-weight: 200;
+    color: rgba(255,255,255,.08);
+}
+
+.web-service-card h3 {
+    margin-top: 34px;
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.web-service-card p {
+    color: rgba(255,255,255,.63);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.website-grid {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.website-card {
+    border: 1px solid rgba(80,150,255,.32);
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(0,0,0,.58);
+    box-shadow: 0 18px 55px rgba(0,0,0,.20);
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.website-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,130,0,.7);
+    box-shadow: 0 20px 55px rgba(0,0,0,.30), 0 0 22px rgba(255,120,0,.15);
+}
+
+.site-preview {
+    height: 245px;
+    overflow: hidden;
+    background: #111;
+}
+
+.browser-bar {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+    background: rgba(4,7,10,.93);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.browser-bar span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.30);
+}
+
+.mock-page {
+    height: calc(100% - 28px);
+    padding: 14px;
+}
+
+.site-preview-a .mock-page {
+    background: linear-gradient(135deg, #182736, #0c1117);
+}
+
+.site-preview-b .mock-page {
+    background: linear-gradient(135deg, #2b1b16, #0c0a09);
+}
+
+.site-preview-c .mock-page {
+    background: linear-gradient(135deg, #19182d, #090911);
+}
+
+.mock-nav {
+    width: 100%;
+    height: 17px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.09);
+    margin-bottom: 15px;
+}
+
+.mock-hero {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 12px;
+    height: 105px;
+}
+
+.mock-copy {
+    padding: 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.055);
+}
+
+.mock-copy i {
+    display: block;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,.21);
+}
+
+.mock-copy i:nth-child(1) { width: 72%; height: 13px; }
+.mock-copy i:nth-child(2) { width: 90%; }
+.mock-copy i:nth-child(3) { width: 52%; }
+
+.mock-visual {
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(0,170,255,.35), rgba(255,102,0,.28));
+    border: 1px solid rgba(255,255,255,.10);
+}
+
+.mock-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+    margin-top: 12px;
+}
+
+.mock-cards b {
+    height: 49px;
+    border-radius: 7px;
+    background: rgba(255,255,255,.065);
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.website-card-copy {
+    padding: 22px 22px 25px 22px;
+}
+
+.website-card-copy span {
+    color: #73c8ff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+}
+
+.website-card-copy h3 {
+    margin: 8px 0 10px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.website-card-copy p {
+    color: rgba(255,255,255,.60);
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.quote-panel {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 42px 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,136,0,.35);
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0,170,255,.13), transparent 36%),
+        radial-gradient(circle at 90% 80%, rgba(255,102,0,.13), transparent 35%),
+        rgba(0,0,0,.62);
+    box-shadow: 0 0 30px rgba(0,0,0,.22);
+}
+
+.quote-panel > div {
+    max-width: 720px;
+}
+
+.quote-button {
+    flex: 0 0 auto;
+}
+
+.creative-heading-section + .grid-section {
+    padding-top: 25px;
+}
+
+/* Make the fixed navigation more readable over the new commercial content. */
+.topnav {
+    background: linear-gradient(to bottom, rgba(0,0,0,.82), rgba(0,0,0,.34), transparent);
+    backdrop-filter: blur(2px);
+}
+
+/* Existing mobile navigation had too many horizontal links for the new order. */
+@media (max-width: 1050px) {
+    .topnav {
+        position: absolute;
+        padding: 18px 52px 18px 12px;
+    }
+
+    .topnav nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 3px;
+    }
+
+    .topnav nav a {
+        padding: 7px 10px;
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .lang-switch {
+        top: 15px;
+        right: 12px;
+        font-size: 13px;
+    }
+
+    .web-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .website-grid {
+        grid-template-columns: 1fr;
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 650px) {
+    .web-hero-title {
+        font-size: 31px;
+    }
+
+    .web-hero-text {
+        font-size: 14px;
+    }
+
+    .web-hero-actions {
+        flex-direction: column;
+        width: min(86vw, 320px);
+    }
+
+    .web-btn {
+        width: 100%;
+    }
+
+    .web-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-panel {
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quote-button {
+        width: 100%;
+    }
+
+    .web-offer-section,
+    .web-projects-section,
+    .quote-section,
+    .creative-heading-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
